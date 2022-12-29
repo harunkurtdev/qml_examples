@@ -30,7 +30,7 @@ ApplicationWindow {
 
     TextField {
         id: textField1
-        placeholderText: qsTr("Enter text here !")
+        placeholderText: qsTr("")
         anchors.horizontalCenter: parent.horizontalCenter
         y: parent.height * 1 / 2
 
