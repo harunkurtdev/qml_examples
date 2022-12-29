@@ -16,15 +16,34 @@ ApplicationWindow {
 
     Backend_QML {
         id: backend_qml_id
+        onStrToSendChanged: {
+            textField2.text = strToSend;
+        }
     }
-
-    Text {
-        id: someTxt
+    TextField {
+        id: textField2
+        placeholderText: qsTr("Enter name")
         anchors.horizontalCenter: parent.horizontalCenter
         y: parent.height * 1 / 3
-        font.pointSize: 36
-        text: "veri yaz"
+
     }
+
+    TextField {
+        id: textField1
+        placeholderText: qsTr("Enter text here !")
+        anchors.horizontalCenter: parent.horizontalCenter
+        y: parent.height * 1 / 2
+
+
+    }
+
+//    Text {
+//        id: someTxt
+//        anchors.horizontalCenter: parent.horizontalCenter
+//        y: parent.height * 1 / 3
+//        font.pointSize: 36
+//        text: "veri yaz"
+//    }
 
     Button {
         id: btn
@@ -32,14 +51,14 @@ ApplicationWindow {
         y: parent.height * 2 / 3
         text: "write data"
         onClicked: {
-            someTxt.text = backend_qml_id.backend_method();
+           backend_qml_id.getText(textField1.text);
         }
     }
 
-    Connections {
-        target: backend_qml_id
-        onQml2cpp: {
-            console.log(qml_value);
-        }
-    }
+//    Connections {
+//        target: backend_qml_id
+//        onQml2cpp: {
+//            console.log(qml_value);
+//        }
+//    }
 }
