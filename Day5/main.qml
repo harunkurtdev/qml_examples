@@ -17,11 +17,13 @@ ApplicationWindow {
     Backend_QML {
         id: backend_qml_id
         onStrToSendChanged: {
+            textField2.visible = true
             textField2.text = strToSend;
         }
     }
     TextField {
         id: textField2
+        visible: false
         placeholderText: qsTr("")
         anchors.horizontalCenter: parent.horizontalCenter
         y: parent.height * 1 / 3
