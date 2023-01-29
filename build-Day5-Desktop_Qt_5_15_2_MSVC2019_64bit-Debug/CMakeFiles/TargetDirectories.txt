@@ -1,0 +1,5 @@
+C:/Users/X/Desktop/everyday_qml_examples/build-Day5-Desktop_Qt_5_15_2_MSVC2019_64bit-Debug/CMakeFiles/edit_cache.dir
+C:/Users/X/Desktop/everyday_qml_examples/build-Day5-Desktop_Qt_5_15_2_MSVC2019_64bit-Debug/CMakeFiles/Day5.dir
+C:/Users/X/Desktop/everyday_qml_examples/build-Day5-Desktop_Qt_5_15_2_MSVC2019_64bit-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/X/Desktop/everyday_qml_examples/build-Day5-Desktop_Qt_5_15_2_MSVC2019_64bit-Debug/CMakeFiles/Day5_autogen_timestamp_deps.dir
+C:/Users/X/Desktop/everyday_qml_examples/build-Day5-Desktop_Qt_5_15_2_MSVC2019_64bit-Debug/CMakeFiles/Day5_autogen.dir

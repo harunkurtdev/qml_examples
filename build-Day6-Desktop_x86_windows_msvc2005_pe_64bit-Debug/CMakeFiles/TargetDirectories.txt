@@ -1,0 +1,5 @@
+C:/Users/X/Desktop/everyday_qml_examples/build-Day6-Desktop_x86_windows_msvc2005_pe_64bit-Debug/CMakeFiles/Day6.dir
+C:/Users/X/Desktop/everyday_qml_examples/build-Day6-Desktop_x86_windows_msvc2005_pe_64bit-Debug/CMakeFiles/edit_cache.dir
+C:/Users/X/Desktop/everyday_qml_examples/build-Day6-Desktop_x86_windows_msvc2005_pe_64bit-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/X/Desktop/everyday_qml_examples/build-Day6-Desktop_x86_windows_msvc2005_pe_64bit-Debug/CMakeFiles/Day6_autogen_timestamp_deps.dir
+C:/Users/X/Desktop/everyday_qml_examples/build-Day6-Desktop_x86_windows_msvc2005_pe_64bit-Debug/CMakeFiles/Day6_autogen.dir

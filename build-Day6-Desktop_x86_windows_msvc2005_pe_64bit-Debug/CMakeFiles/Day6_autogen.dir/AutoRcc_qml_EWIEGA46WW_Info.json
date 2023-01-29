@@ -1,0 +1,23 @@
+{
+	"BUILD_DIR" : "C:/Users/X/Desktop/everyday_qml_examples/build-Day6-Desktop_x86_windows_msvc2005_pe_64bit-Debug/Day6_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/X/Desktop/everyday_qml_examples/build-Day6-Desktop_x86_windows_msvc2005_pe_64bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/X/Desktop/everyday_qml_examples/build-Day6-Desktop_x86_windows_msvc2005_pe_64bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/X/Desktop/everyday_qml_examples/Day6",
+	"CMAKE_SOURCE_DIR" : "C:/Users/X/Desktop/everyday_qml_examples/Day6",
+	"INCLUDE_DIR" : "C:/Users/X/Desktop/everyday_qml_examples/build-Day6-Desktop_x86_windows_msvc2005_pe_64bit-Debug/Day6_autogen/include",
+	"INPUTS" : 
+	[
+		"C:/Users/X/Desktop/everyday_qml_examples/Day6/Button.qml",
+		"C:/Users/X/Desktop/everyday_qml_examples/Day6/main.qml"
+	],
+	"LOCK_FILE" : "C:/Users/X/Desktop/everyday_qml_examples/build-Day6-Desktop_x86_windows_msvc2005_pe_64bit-Debug/CMakeFiles/Day6_autogen.dir/AutoRcc_qml_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "qml" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_qml.cpp",
+	"RCC_EXECUTABLE" : "C:/Qt/5.15.2/msvc2019_64/bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "C:/Users/X/Desktop/everyday_qml_examples/build-Day6-Desktop_x86_windows_msvc2005_pe_64bit-Debug/CMakeFiles/Day6_autogen.dir/AutoRcc_qml_EWIEGA46WW_Used.txt",
+	"SOURCE" : "C:/Users/X/Desktop/everyday_qml_examples/Day6/qml.qrc",
+	"VERBOSITY" : 0
+}

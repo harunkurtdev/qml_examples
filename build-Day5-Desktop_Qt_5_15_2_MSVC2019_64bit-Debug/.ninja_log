@@ -1,0 +1,12 @@
+# ninja log v5
+1	597	6941486891862887	Day5_autogen/timestamp	a48f01bb14b2164f
+1	597	6941486891862887	Day5_autogen/mocs_compilation.cpp	a48f01bb14b2164f
+1	597	6941486891862887	C:/Users/X/Desktop/everyday_qml_examples/build-Day5-Desktop_Qt_5_15_2_MSVC2019_64bit-Debug/Day5_autogen/timestamp	a48f01bb14b2164f
+1	597	6941486891862887	C:/Users/X/Desktop/everyday_qml_examples/build-Day5-Desktop_Qt_5_15_2_MSVC2019_64bit-Debug/Day5_autogen/mocs_compilation.cpp	a48f01bb14b2164f
+598	775	6941486894992993	Day5_autogen/EWIEGA46WW/qrc_qml.cpp	ef012d1c6c23ca40
+598	775	6941486894992993	C:/Users/X/Desktop/everyday_qml_examples/build-Day5-Desktop_Qt_5_15_2_MSVC2019_64bit-Debug/Day5_autogen/EWIEGA46WW/qrc_qml.cpp	ef012d1c6c23ca40
+1394	1633	6941486903601345	CMakeFiles/Day5.dir/Day5_autogen/EWIEGA46WW/qrc_qml.cpp.obj	ba5f69e39a03d84c
+1180	2069	6941486907944834	CMakeFiles/Day5.dir/Day5_autogen/mocs_compilation.cpp.obj	bd671941af87c9da
+775	2150	6941486908754362	CMakeFiles/Day5.dir/backend_qml.cpp.obj	a14f0eb956ec4037
+947	2220	6941486909447527	CMakeFiles/Day5.dir/main.cpp.obj	a3b19ee3d8dfc0ee
+2220	4375	6941486930914296	Day5.exe	6d63446404d5f1e1
