@@ -1,4 +1,4 @@
-import QtQuick 2.17
+import QtQuick 2.7
 import QtQuick.Window 2.2
 
 Window {
@@ -6,4 +6,17 @@ Window {
     height: 480
     visible: true
     title: qsTr("Day 6")
+
+    Button{
+    id:btnAdd
+    width:50
+    height:35
+    anchors{
+        top:parent.top
+        left:parent.left
+        }
+    text:"Add"
+    onClicked:{
+    }
+    }
 }

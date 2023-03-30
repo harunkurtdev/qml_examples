@@ -1,0 +1,11 @@
+# ninja log v5
+1	58	7019028226156076	stack_view_autogen/timestamp	c2b35f2103d32188
+1	58	7019028226156076	stack_view_autogen/mocs_compilation.cpp	c2b35f2103d32188
+1	58	7019028226156076	C:/Users/X/Desktop/everyday_qml_examples/build-stack_view-Desktop_Qt_5_15_2_MSVC2019_64bit-Debug/stack_view_autogen/timestamp	c2b35f2103d32188
+1	58	7019028226156076	C:/Users/X/Desktop/everyday_qml_examples/build-stack_view-Desktop_Qt_5_15_2_MSVC2019_64bit-Debug/stack_view_autogen/mocs_compilation.cpp	c2b35f2103d32188
+58	83	7019028226646185	stack_view_autogen/EWIEGA46WW/qrc_qml.cpp	1835e125457ec350
+58	83	7019028226646185	C:/Users/X/Desktop/everyday_qml_examples/build-stack_view-Desktop_Qt_5_15_2_MSVC2019_64bit-Debug/stack_view_autogen/EWIEGA46WW/qrc_qml.cpp	1835e125457ec350
+83	110	7019028226936084	CMakeFiles/stack_view.dir/stack_view_autogen/mocs_compilation.cpp.obj	b3e6f24e0b6ee2f0
+84	113	7019028226956084	CMakeFiles/stack_view.dir/stack_view_autogen/EWIEGA46WW/qrc_qml.cpp.obj	218073ab086b5579
+85	635	7019028232161561	CMakeFiles/stack_view.dir/main.cpp.obj	f8d874d52ec1eb90
+636	804	7019028233771754	stack_view.exe	49fe85cb493397b2

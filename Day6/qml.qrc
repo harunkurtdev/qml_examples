@@ -2,5 +2,6 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>Button.qml</file>
+        <file>MovieList.qml</file>
     </qresource>
 </RCC>

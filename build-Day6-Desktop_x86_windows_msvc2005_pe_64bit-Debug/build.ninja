@@ -146,7 +146,7 @@ build Day6_autogen\timestamp Day6_autogen\mocs_compilation.cpp | ${cmake_ninja_w
 #############################################
 # Custom command for Day6_autogen\EWIEGA46WW\qrc_qml.cpp
 
-build Day6_autogen\EWIEGA46WW\qrc_qml.cpp | ${cmake_ninja_workdir}Day6_autogen\EWIEGA46WW\qrc_qml.cpp: CUSTOM_COMMAND C$:\Users\X\Desktop\everyday_qml_examples\Day6\qml.qrc CMakeFiles\Day6_autogen.dir\AutoRcc_qml_EWIEGA46WW_Info.json C$:\Users\X\Desktop\everyday_qml_examples\Day6\Button.qml C$:\Users\X\Desktop\everyday_qml_examples\Day6\main.qml C$:\Qt\5.15.2\msvc2019_64\bin\rcc.exe || Day6_autogen Day6_autogen_timestamp_deps
+build Day6_autogen\EWIEGA46WW\qrc_qml.cpp | ${cmake_ninja_workdir}Day6_autogen\EWIEGA46WW\qrc_qml.cpp: CUSTOM_COMMAND C$:\Users\X\Desktop\everyday_qml_examples\Day6\qml.qrc CMakeFiles\Day6_autogen.dir\AutoRcc_qml_EWIEGA46WW_Info.json C$:\Users\X\Desktop\everyday_qml_examples\Day6\Button.qml C$:\Users\X\Desktop\everyday_qml_examples\Day6\MovieList.qml C$:\Users\X\Desktop\everyday_qml_examples\Day6\main.qml C$:\Qt\5.15.2\msvc2019_64\bin\rcc.exe || Day6_autogen Day6_autogen_timestamp_deps
   COMMAND = cmd.exe /C "cd /D C:\Users\X\Desktop\everyday_qml_examples\build-Day6-Desktop_x86_windows_msvc2005_pe_64bit-Debug && C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc C:/Users/X/Desktop/everyday_qml_examples/build-Day6-Desktop_x86_windows_msvc2005_pe_64bit-Debug/CMakeFiles/Day6_autogen.dir/AutoRcc_qml_EWIEGA46WW_Info.json Debug"
   DESC = Automatic RCC for qml.qrc
   restat = 1
@@ -155,7 +155,7 @@ build Day6_autogen\EWIEGA46WW\qrc_qml.cpp | ${cmake_ninja_workdir}Day6_autogen\E
 #############################################
 # Phony custom command for CMakeFiles\Day6_autogen_timestamp_deps
 
-build CMakeFiles\Day6_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles\Day6_autogen_timestamp_deps: phony C$:\Qt\5.15.2\msvc2019_64\bin\moc.exe C$:\Qt\5.15.2\msvc2019_64\bin\Qt5Cored.dll C$:\Qt\5.15.2\msvc2019_64\bin\Qt5Quickd.dll
+build CMakeFiles\Day6_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles\Day6_autogen_timestamp_deps: phony C$:\Qt\5.15.2\msvc2019_64\bin\Qt5Cored.dll C$:\Qt\5.15.2\msvc2019_64\bin\moc.exe C$:\Qt\5.15.2\msvc2019_64\bin\Qt5Quickd.dll
 
 
 #############################################

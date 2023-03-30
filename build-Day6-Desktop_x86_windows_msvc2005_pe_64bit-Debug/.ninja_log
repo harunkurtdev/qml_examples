@@ -1,0 +1,15 @@
+# ninja log v5
+1	48	6967360246412243	Day6_autogen/timestamp	2392eaa298de9e40
+1	48	6967360246412243	Day6_autogen/mocs_compilation.cpp	2392eaa298de9e40
+1	48	6967360246412243	C:/Users/X/Desktop/everyday_qml_examples/build-Day6-Desktop_x86_windows_msvc2005_pe_64bit-Debug/Day6_autogen/timestamp	2392eaa298de9e40
+1	48	6967360246412243	C:/Users/X/Desktop/everyday_qml_examples/build-Day6-Desktop_x86_windows_msvc2005_pe_64bit-Debug/Day6_autogen/mocs_compilation.cpp	2392eaa298de9e40
+48	71	6967360246814453	Day6_autogen/EWIEGA46WW/qrc_qml.cpp	60d175befe3606b1
+48	71	6967360246814453	C:/Users/X/Desktop/everyday_qml_examples/build-Day6-Desktop_x86_windows_msvc2005_pe_64bit-Debug/Day6_autogen/EWIEGA46WW/qrc_qml.cpp	60d175befe3606b1
+71	474	6967360250856579	CMakeFiles/Day6.dir/Day6_autogen/mocs_compilation.cpp.obj	52066f4c73d0875c
+72	476	6967360250866546	CMakeFiles/Day6.dir/Day6_autogen/EWIEGA46WW/qrc_qml.cpp.obj	9c1f2db25818bf5a
+73	929	6967360255387426	CMakeFiles/Day6.dir/main.cpp.obj	ebf4adb51e9f7d3
+929	1119	6967360257184322	Day6.exe	3aae8bcb8b07345b
+1	23	6967360382996770	Day6_autogen/EWIEGA46WW/qrc_qml.cpp	60d175befe3606b1
+1	23	6967360382996770	C:/Users/X/Desktop/everyday_qml_examples/build-Day6-Desktop_x86_windows_msvc2005_pe_64bit-Debug/Day6_autogen/EWIEGA46WW/qrc_qml.cpp	60d175befe3606b1
+23	53	6967360383305691	CMakeFiles/Day6.dir/Day6_autogen/EWIEGA46WW/qrc_qml.cpp.obj	9c1f2db25818bf5a
+53	121	6967360383839794	Day6.exe	3aae8bcb8b07345b
