@@ -13,9 +13,7 @@ Window {
 
     NavigationStack {
             id: stackView
-
             anchors.fill: parent
-
             initialItem: LoginPage {}
         }
 }

@@ -10,13 +10,16 @@ class PostController : public QObject
     Q_OBJECT
 public:
     explicit PostController(QObject *parent = nullptr);
-    void getPosts();
+
 
 signals:
-    void getPostsResult(const QVariantList& posts);
+//    void getPostsResult(const QVariantList& posts);
+    void getPostsResult(QList<QObject*> posts);
 
-private slots:
-    void handleNetworkData(QNetworkReply* reply);
+
+public slots:
+    void getPosts();
+//    void handleNetworkData(QNetworkReply* reply);
 
 private:
     QNetworkAccessManager m_networkAccessManager;

@@ -24,7 +24,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_LoginController_t {
     QByteArrayData data[13];
-    char stringdata0[135];
+    char stringdata0[150];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -40,18 +40,18 @@ QT_MOC_LITERAL(3, 33, 15), // "passwordChanged"
 QT_MOC_LITERAL(4, 49, 11), // "loginResult"
 QT_MOC_LITERAL(5, 61, 7), // "success"
 QT_MOC_LITERAL(6, 69, 10), // "postsReady"
-QT_MOC_LITERAL(7, 80, 15), // "QList<QObject*>"
-QT_MOC_LITERAL(8, 96, 5), // "posts"
-QT_MOC_LITERAL(9, 102, 5), // "login"
-QT_MOC_LITERAL(10, 108, 8), // "username"
-QT_MOC_LITERAL(11, 117, 8), // "password"
-QT_MOC_LITERAL(12, 126, 8) // "getPosts"
+QT_MOC_LITERAL(7, 80, 30), // "QList<QMap<QString,QVariant> >"
+QT_MOC_LITERAL(8, 111, 5), // "posts"
+QT_MOC_LITERAL(9, 117, 5), // "login"
+QT_MOC_LITERAL(10, 123, 8), // "username"
+QT_MOC_LITERAL(11, 132, 8), // "password"
+QT_MOC_LITERAL(12, 141, 8) // "getPosts"
 
     },
     "LoginController\0usernameChanged\0\0"
     "passwordChanged\0loginResult\0success\0"
-    "postsReady\0QList<QObject*>\0posts\0login\0"
-    "username\0password\0getPosts"
+    "postsReady\0QList<QMap<QString,QVariant> >\0"
+    "posts\0login\0username\0password\0getPosts"
 };
 #undef QT_MOC_LITERAL
 
@@ -108,7 +108,7 @@ void LoginController::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
         case 0: _t->usernameChanged(); break;
         case 1: _t->passwordChanged(); break;
         case 2: _t->loginResult((*reinterpret_cast< bool(*)>(_a[1]))); break;
-        case 3: _t->postsReady((*reinterpret_cast< QList<QObject*>(*)>(_a[1]))); break;
+        case 3: _t->postsReady((*reinterpret_cast< QList<QMap<QString,QVariant> >(*)>(_a[1]))); break;
         case 4: _t->login((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
         case 5: _t->getPosts(); break;
         default: ;
@@ -120,7 +120,7 @@ void LoginController::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
             switch (*reinterpret_cast<int*>(_a[1])) {
             default: *reinterpret_cast<int*>(_a[0]) = -1; break;
             case 0:
-                *reinterpret_cast<int*>(_a[0]) = qRegisterMetaType< QList<QObject*> >(); break;
+                *reinterpret_cast<int*>(_a[0]) = qRegisterMetaType< QList<QMap<QString,QVariant> > >(); break;
             }
             break;
         }
@@ -148,7 +148,7 @@ void LoginController::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
             }
         }
         {
-            using _t = void (LoginController::*)(QList<QObject*> );
+            using _t = void (LoginController::*)(QList<QMap<QString,QVariant>> );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&LoginController::postsReady)) {
                 *result = 3;
                 return;
@@ -256,7 +256,7 @@ void LoginController::loginResult(bool _t1)
 }
 
 // SIGNAL 3
-void LoginController::postsReady(QList<QObject*> _t1)
+void LoginController::postsReady(QList<QMap<QString,QVariant>> _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 3, _a);

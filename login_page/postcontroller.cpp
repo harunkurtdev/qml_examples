@@ -20,20 +20,20 @@ void PostController::getPosts()
             return;
         }
 
-        QVariantList posts;
+        QList<QObject*> posts;
+        QJsonDocument response = QJsonDocument::fromJson(reply->readAll());
 
-        QByteArray data = reply->readAll();
-        QJsonDocument jsonDoc = QJsonDocument::fromJson(data);
-        QJsonArray jsonArray = jsonDoc.array();
-
-        for (int i = 0; i < jsonArray.size(); i++) {
-            QJsonObject postObject = jsonArray.at(i).toObject();
-            QVariantMap postMap;
-            postMap.insert("userId", postObject.value("userId").toInt());
-            postMap.insert("id", postObject.value("id").toInt());
-            postMap.insert("title", postObject.value("title").toString());
-            postMap.insert("body", postObject.value("body").toString());
-            posts.append(postMap);
+        if (response.isArray()) {
+            QJsonArray postsArray = response.array();
+            foreach (const QJsonValue &post, postsArray) {
+                QJsonObject postObject = post.toObject();
+                QObject *postItem = new QObject();
+//                qDebug()<<postObject.value("id").toInt();
+                postItem->setProperty("id", postObject.value("id").toInt());
+                postItem->setProperty("title", postObject.value("title").toString());
+                postItem->setProperty("body", postObject.value("body").toString());
+                posts.append(postItem);
+            }
         }
 
         emit getPostsResult(posts);

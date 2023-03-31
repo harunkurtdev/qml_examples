@@ -8,6 +8,7 @@
 	"INPUTS" : 
 	[
 		"C:/Users/X/Desktop/everyday_qml_examples/login_page/MainPage.qml",
+		"C:/Users/X/Desktop/everyday_qml_examples/login_page/CardItem.qml",
 		"C:/Users/X/Desktop/everyday_qml_examples/login_page/NavigationStack.qml",
 		"C:/Users/X/Desktop/everyday_qml_examples/login_page/LoginPage.qml",
 		"C:/Users/X/Desktop/everyday_qml_examples/login_page/main.qml"

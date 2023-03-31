@@ -82,22 +82,46 @@ void LoginController::getPosts()
     QNetworkRequest request(QUrl(getPostsapiUrl + "posts"));
     QNetworkReply *reply = networkManager->get(request);
 
-    connect(reply, &QNetworkReply::finished, [=]() {
-        QList<QObject*> posts;
-        QJsonDocument response = QJsonDocument::fromJson(reply->readAll());
+//    connect(reply, &QNetworkReply::finished, [=]() {
+//        QList<QMap<QString, QVariant>> posts;
+//        QJsonDocument response = QJsonDocument::fromJson(reply->readAll());
 
-        if (response.isArray()) {
-            QJsonArray postsArray = response.array();
-            foreach (const QJsonValue &post, postsArray) {
-                QJsonObject postObject = post.toObject();
-                QObject *postItem = new QObject();
-                postItem->setProperty("id", postObject.value("id").toInt());
-                postItem->setProperty("title", postObject.value("title").toString());
-                postItem->setProperty("body", postObject.value("body").toString());
-                posts.append(postItem);
-            }
-        }
+//        if (response.isArray()) {
+//            QJsonArray postsArray = response.array();
+//            foreach (const QJsonValue &post, postsArray) {
+//                QJsonObject postObject = post.toObject();
+//                QMap<QString, QVariant> postMap;
+//                postMap.insert("id", postObject.value("id").toInt());
+//                postMap.insert("title", postObject.value("title").toString());
+//                postMap.insert("body", postObject.value("body").toString());
+//                posts.append(postMap);
+//            }
+//        }
 
-        emit postsReady(posts);
-    });
+//        emit postsReady(posts);
+//    });
+
+
+
+    connect(reply, &QNetworkReply::finished, this, [this, reply]() {
+          if (reply->error() == QNetworkReply::NoError) {
+              QList<QMap<QString, QVariant>> posts;
+              QByteArray response = reply->readAll();
+              QJsonDocument document = QJsonDocument::fromJson(response);
+              QJsonArray postArray = document.array();
+              for (int i = 0; i < postArray.size(); ++i) {
+                  QJsonObject postObject = postArray.at(i).toObject();
+                  QMap<QString, QVariant> postMap;
+//                  postMap["userId"] = postObject.value("userId").toInt();
+                  postMap["id"] = postObject.value("id").toInt();
+                  postMap["title"] = postObject.value("title").toString();
+                  postMap["body"] = postObject.value("body").toString();
+                  posts.append(postMap);
+              }
+              emit postsReady(posts);
+          } else {
+              qDebug() << "Error: " << reply->errorString();
+          }
+          reply->deleteLater();
+      });
 }

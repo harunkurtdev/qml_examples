@@ -4,5 +4,6 @@
         <file>LoginPage.qml</file>
         <file>MainPage.qml</file>
         <file>NavigationStack.qml</file>
+        <file>CardItem.qml</file>
     </qresource>
 </RCC>

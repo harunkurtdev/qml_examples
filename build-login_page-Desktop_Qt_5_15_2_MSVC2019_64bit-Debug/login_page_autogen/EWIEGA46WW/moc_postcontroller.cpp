@@ -10,6 +10,7 @@
 #include "../../../login_page/postcontroller.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
+#include <QtCore/QList>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'postcontroller.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
@@ -22,8 +23,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_PostController_t {
-    QByteArrayData data[7];
-    char stringdata0[76];
+    QByteArrayData data[6];
+    char stringdata0[62];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -35,14 +36,13 @@ static const qt_meta_stringdata_PostController_t qt_meta_stringdata_PostControll
 QT_MOC_LITERAL(0, 0, 14), // "PostController"
 QT_MOC_LITERAL(1, 15, 14), // "getPostsResult"
 QT_MOC_LITERAL(2, 30, 0), // ""
-QT_MOC_LITERAL(3, 31, 5), // "posts"
-QT_MOC_LITERAL(4, 37, 17), // "handleNetworkData"
-QT_MOC_LITERAL(5, 55, 14), // "QNetworkReply*"
-QT_MOC_LITERAL(6, 70, 5) // "reply"
+QT_MOC_LITERAL(3, 31, 15), // "QList<QObject*>"
+QT_MOC_LITERAL(4, 47, 5), // "posts"
+QT_MOC_LITERAL(5, 53, 8) // "getPosts"
 
     },
-    "PostController\0getPostsResult\0\0posts\0"
-    "handleNetworkData\0QNetworkReply*\0reply"
+    "PostController\0getPostsResult\0\0"
+    "QList<QObject*>\0posts\0getPosts"
 };
 #undef QT_MOC_LITERAL
 
@@ -63,13 +63,13 @@ static const uint qt_meta_data_PostController[] = {
        1,    1,   24,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       4,    1,   27,    2, 0x08 /* Private */,
+       5,    0,   27,    2, 0x0a /* Public */,
 
  // signals: parameters
-    QMetaType::Void, QMetaType::QVariantList,    3,
+    QMetaType::Void, 0x80000000 | 3,    4,
 
  // slots: parameters
-    QMetaType::Void, 0x80000000 | 5,    6,
+    QMetaType::Void,
 
        0        // eod
 };
@@ -80,25 +80,25 @@ void PostController::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         auto *_t = static_cast<PostController *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->getPostsResult((*reinterpret_cast< const QVariantList(*)>(_a[1]))); break;
-        case 1: _t->handleNetworkData((*reinterpret_cast< QNetworkReply*(*)>(_a[1]))); break;
+        case 0: _t->getPostsResult((*reinterpret_cast< QList<QObject*>(*)>(_a[1]))); break;
+        case 1: _t->getPosts(); break;
         default: ;
         }
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
         switch (_id) {
         default: *reinterpret_cast<int*>(_a[0]) = -1; break;
-        case 1:
+        case 0:
             switch (*reinterpret_cast<int*>(_a[1])) {
             default: *reinterpret_cast<int*>(_a[0]) = -1; break;
             case 0:
-                *reinterpret_cast<int*>(_a[0]) = qRegisterMetaType< QNetworkReply* >(); break;
+                *reinterpret_cast<int*>(_a[0]) = qRegisterMetaType< QList<QObject*> >(); break;
             }
             break;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            using _t = void (PostController::*)(const QVariantList & );
+            using _t = void (PostController::*)(QList<QObject*> );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&PostController::getPostsResult)) {
                 *result = 0;
                 return;
@@ -148,7 +148,7 @@ int PostController::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void PostController::getPostsResult(const QVariantList & _t1)
+void PostController::getPostsResult(QList<QObject*> _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);

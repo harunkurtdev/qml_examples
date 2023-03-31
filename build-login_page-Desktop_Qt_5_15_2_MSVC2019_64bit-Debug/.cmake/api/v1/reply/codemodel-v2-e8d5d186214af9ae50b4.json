@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "login_page",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "login_page::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-login_page-Debug-832fa6436857927c59f3.json",
+					"name" : "login_page",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "login_page_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-login_page_autogen-Debug-12ca6264d80f5e031002.json",
+					"name" : "login_page_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "login_page_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-login_page_autogen_timestamp_deps-Debug-b8991dee69f7510b10cf.json",
+					"name" : "login_page_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/X/Desktop/everyday_qml_examples/build-login_page-Desktop_Qt_5_15_2_MSVC2019_64bit-Debug",
+		"source" : "C:/Users/X/Desktop/everyday_qml_examples/login_page"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

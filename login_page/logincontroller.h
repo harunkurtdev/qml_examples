@@ -30,9 +30,7 @@ signals:
     void usernameChanged();
     void passwordChanged();
     void loginResult(bool success);
-    void postsReady(QList<QObject*> posts);
-
-
+    void postsReady( QList<QMap<QString, QVariant>> posts);
 
 
 public slots:

@@ -4,7 +4,7 @@
 #include <QtQml>
 
 #include "logincontroller.h"
-
+#include "postcontroller.h"
 int main(int argc, char *argv[])
 {
 #if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
     const QUrl url(QStringLiteral("qrc:/main.qml"));
 
     qmlRegisterType<LoginController>("com.login_page.LoginController", 1, 0, "LoginController");
-
+    qmlRegisterType<PostController>("com.main_page.PostController", 1, 0, "PostController");
 
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
                      &app, [url](QObject *obj, const QUrl &objUrl) {
