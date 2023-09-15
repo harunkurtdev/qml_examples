@@ -1,11 +1,7 @@
 import QtQuick 2.0
-import QtQuick.Scene2D 2.9
-import QtQuick3D 1.15
-import QtGamepad 1.0
 
 Item {
-    id: item1
-//    id: item1
+    id: itemX
     property string titleText:"titleText"
     property int itemId : 0
     property string bodyText:"bodyText"

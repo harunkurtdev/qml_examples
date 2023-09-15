@@ -19,46 +19,14 @@ Item {
             print(success)
             if (success) {
                 // Navigate to the main page
-                //                        stackView.push(Qt.resolvedUrl("qrc:/qml/MainPage.qml"))
+                                        stackView.push(Qt.resolvedUrl("qrc:/MainPage.qml"))
             } else {
                 //                        errorMessage.text = "Invalid username or password"
                 //                        errorMessage.visible = true
             }
         }
         onPostsReady:{
-            postListModel.clear()
-//            listView.model.clear()
-            for (var i = 0; i < posts.length; ++i) {
-                print(posts[i])
-//                listView.model.append(posts[i])
-                console.log(posts[i])
-                postListModel.append(posts[i])
-            }
         }
-    }
-
-    ListView {
-        id: listView
-        x: 220
-        y: 339
-        width: 200
-        height: 100
-        spacing: 10
-        model: postListModel
-        delegate: CardItem {
-                        id: cardItem1
-                        width: 200
-                        height: 100
-            //            anchors.verticalCenter: parent.verticalCenter
-            //            anchors.horizontalCenter: parent.horizontalCenter
-                        itemId: id
-                        bodyText: body
-                        titleText: title
-                    }
-    }
-
-    ListModel {
-        id: postListModel
     }
 
 

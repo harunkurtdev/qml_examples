@@ -2,6 +2,7 @@ import QtQuick 2.0
 import QtQuick.Controls 2.15
 
 import com.main_page.PostController 1.0
+
 Item{
 
     id: mainpage
@@ -10,26 +11,39 @@ Item{
     //    color: "white"
     //    anchors.centerIn: parent.Center
 
+    //        Component.onCompleted: {}
     PostController{
-    id: postController
-    onGetPostsResult: function(posts){
-        print(posts[0])
+        id: postController
+        onGetPostsResult:{
+            postListModel.clear()
+            for (var i = 0; i < posts.length; ++i) {
+                print(posts[i])
+                console.log(posts[i])
+                postListModel.append(posts[i])
+            }
+        }
     }
-    Component.onCompleted: {
-           // fetch posts from API and populate myModel.posts
-       }
+
+    ListModel {
+        id: postListModel
     }
 
     Column{
         id: mainpageColumn
-        anchors.centerIn: parent
+        width: 320
+        height: 300
+        anchors.top: parent.top
+        anchors.topMargin: 20
+        anchors.horizontalCenter: parent.horizontalCenter
         spacing: 10
 
         Button {
             id:buttonJsonView
-            anchors.centerIn: parent
             //            background: "black"
             text: "Listeyi göster"
+            anchors.top: parent.top
+            anchors.topMargin: 10
+            anchors.horizontalCenter: parent.horizontalCenter
             onClicked: function(){
                 postController.getPosts()
                 listModel.visible = !listModel.visible
@@ -37,20 +51,37 @@ Item{
         }
 
         ListView {
-            id: listModel
-            visible: false
-            anchors.left: buttonJsonView.left
-            anchors.top: buttonJsonView.bottom
-            anchors.leftMargin: 0
-            anchors.topMargin: 20
-            model: ["Öğe 1", "Öğe 2", "Öğe 3"] // burada ListView modeli belirtilir
-            delegate: Button {
-                text: modelData // butonun metni, ListView'deki modelin verilerine göre ayarlanır
-                onClicked: {
-                    console.log("Seçilen öğe:", modelData)
-                }
+            id: listView
+            width: 200
+            height: 100
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: 10
+            //            width: 640
+            //            height: 480
+            anchors.horizontalCenter: parent.horizontalCenter
+            spacing: 10
+            model: postListModel
+            delegate: CardItem {
+                id: cardItem1
+                width: 200
+                height: 100
+                //            anchors.verticalCenter: parent.verticalCenter
+                //            anchors.horizontalCenter: parent.horizontalCenter
+                itemId: id
+                bodyText: body
+                titleText: title
             }
-
         }
+
+
+
+
     }
+
 }
+
+/*##^##
+Designer {
+    D{i:0;autoSize:true;height:480;width:640}D{i:1}D{i:2}D{i:4}D{i:5}D{i:3}
+}
+##^##*/

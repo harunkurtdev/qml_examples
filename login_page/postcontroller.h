@@ -14,7 +14,7 @@ public:
 
 signals:
 //    void getPostsResult(const QVariantList& posts);
-    void getPostsResult(QList<QObject*> posts);
+    void getPostsResult(QList<QMap<QString, QVariant>> posts);
 
 
 public slots:
